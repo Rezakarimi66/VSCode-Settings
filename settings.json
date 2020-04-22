@@ -1,0 +1,23 @@
+{
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "remote.SSH.remotePlatform": {
+        "dev-all": "linux"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    // turn it off for JS and JSX, we will do this via eslint
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    // tell the ESLint plugin to run on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+    "prettier.disableLanguages": [
+        "javascript"
+    ]
+}
