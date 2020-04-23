@@ -16,6 +16,7 @@ module.exports = {
     "allowImportExportEverywhere": true
   },
   "rules": {
+    "semi": ["error", "always"],
     "space-in-parens": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "keyword-spacing": ["error", { after: false }],
