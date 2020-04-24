@@ -8,19 +8,20 @@ module.exports = {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
   },
-  "parser": "babel-eslint",
+  parser: "babel-eslint",
   parserOptions: { 
     
     ecmaVersion: 2018, 
     sourceType: "module",
     "allowImportExportEverywhere": true
   },
+  
   "rules": {
+    "comma-spacing": ["error", {"before": false, "after": true}],
     "semi": ["error", "always"],
     "space-in-parens": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "keyword-spacing": ["error", { after: false }],
-    "object-property-newline": ["error"],
     "object-curly-spacing": ["error", "always", { "objectsInObjects": true }],
     "array-bracket-spacing": ["error", "always", { "singleValue": false, "arraysInArrays": true }],
     "computed-property-spacing": ["error", "never"],
@@ -35,5 +36,11 @@ module.exports = {
     "operator-linebreak": ["error", "none"],
     "linebreak-style": ["error", "unix"],
     "comma-dangle": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "array-bracket-newline": ["error", { "multiline": true }],
+    "dot-location": ["error", "object"],
+    "key-spacing": ["error", { align: "value" }],
+    "object-property-newline": "error",
+    "object-curly-newline": ["error",{ "minProperties": 2}]
   }  
 };
