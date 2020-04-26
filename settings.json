@@ -20,5 +20,6 @@
     "prettier.disableLanguages": [
         "javascript"
     ],
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+    "terminal.integrated.allowChords": false
 }
