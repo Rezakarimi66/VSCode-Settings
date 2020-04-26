@@ -21,7 +21,7 @@ module.exports = {
     "semi": ["error", "always"],
     "space-in-parens": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
-    "keyword-spacing": ["error", { after: false }],
+    "keyword-spacing": ["error", { after: false, "overrides": { "return": { "after": true } }}],
     "object-curly-spacing": ["error", "always", { "objectsInObjects": true }],
     "array-bracket-spacing": ["error", "always", { "singleValue": false, "arraysInArrays": true }],
     "computed-property-spacing": ["error", "never"],
