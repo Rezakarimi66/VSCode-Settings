@@ -41,6 +41,8 @@ module.exports = {
     "dot-location": ["error", "object"],
     "key-spacing": ["error", { align: "value" }],
     "object-property-newline": "error",
-    "object-curly-newline": ["error",{ "minProperties": 2}]
+    "object-curly-newline": ["error",{ "minProperties": 2}],
+    "no-whitespace-before-property": "error",
+    "padded-blocks": ["error", "never"]
   }  
 };
