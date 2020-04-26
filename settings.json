@@ -21,5 +21,6 @@
         "javascript"
     ],
     "eslint.format.enable": true,
-    "terminal.integrated.allowChords": false
+    "terminal.integrated.allowChords": false,
+    "workbench.editor.enablePreview": false
 }
