@@ -43,6 +43,7 @@ module.exports = {
     "object-property-newline": "error",
     "object-curly-newline": ["error",{ "minProperties": 2}],
     "no-whitespace-before-property": "error",
-    "padded-blocks": ["error", "never"]
+    "padded-blocks": ["error", "never"],
+    "switch-colon-spacing": ["error", {"after": true, "before": false}]
   }  
 };
