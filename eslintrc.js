@@ -44,6 +44,7 @@ module.exports = {
     "object-curly-newline": ["error",{ "minProperties": 2}],
     "no-whitespace-before-property": "error",
     "padded-blocks": ["error", "never"],
-    "switch-colon-spacing": ["error", {"after": true, "before": false}]
+    "switch-colon-spacing": ["error", {"after": true, "before": false}],
+    "max-len": ["error", { "code": 110 }]
   }  
 };
