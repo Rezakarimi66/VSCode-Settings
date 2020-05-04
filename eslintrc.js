@@ -21,7 +21,10 @@ module.exports = {
     "semi": ["error", "always"],
     "space-in-parens": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
-    "keyword-spacing": ["error", { after: false, "overrides": { "return": { "after": true } }}],
+    "keyword-spacing": ["error", { after: false, "overrides": 
+    { "return": { "after": true },
+    "throw": { "after": true },
+    "case": { "after": true } }}],
     "object-curly-spacing": ["error", "always", { "objectsInObjects": true }],
     "array-bracket-spacing": ["error", "always", { "singleValue": false, "arraysInArrays": true }],
     "computed-property-spacing": ["error", "never"],
@@ -33,7 +36,6 @@ module.exports = {
     "indent": ["error", 2],
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "operator-linebreak": ["error", "none"],
     "linebreak-style": ["error", "unix"],
     "comma-dangle": ["error", "never"],
     "eol-last": ["error", "always"],
@@ -45,6 +47,8 @@ module.exports = {
     "no-whitespace-before-property": "error",
     "padded-blocks": ["error", "never"],
     "switch-colon-spacing": ["error", {"after": true, "before": false}],
-    "max-len": ["error", { "code": 110 }]
+    "max-len": ["error", { "code": 110 }],
+    "multiline-ternary": ["error", "always-multiline"],
+    "space-infix-ops": "error"
   }  
 };
