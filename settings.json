@@ -22,5 +22,12 @@
     ],
     "eslint.format.enable": true,
     "terminal.integrated.allowChords": false,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+        "*.loc": "makefile"
+    }
 }
