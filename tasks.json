@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "make futasWebPlain",
+			"type": "shell",
+			"command": "cd /ws/rkarimi/pdvfs/src/gui/tc/Web; make futasWebPlain.js",
+			"problemMatcher": []
+		},
+		{
+			"label": "make gui & check",
+			"type": "shell",
+			"command": "cd /ws/rkarimi/pdvfs/src; make -j10 gui;cd /ws/rkarimi/pdvfs/src/gui/tc/Web; make -j10 check",
+			"problemMatcher": []
+		},
+		{
+			"label": "make decide",
+			"type": "shell",
+			"command": "cd /ws/rkarimi/pdvfs/src; make -j10",
+			"problemMatcher": []
+		}
+	]
+}
