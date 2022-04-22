@@ -1,33 +1,69 @@
 {
-    "terminal.integrated.shellArgs.linux": [
-        "-l"
-    ],
-    "remote.SSH.remotePlatform": {
-        "dev-all": "linux"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "eslint.alwaysShowStatus": true,
-    // turn it off for JS and JSX, we will do this via eslint
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    // tell the ESLint plugin to run on save
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-    "prettier.disableLanguages": [
-        "javascript"
-    ],
-    "eslint.format.enable": true,
-    "terminal.integrated.allowChords": false,
-    "workbench.editor.enablePreview": false,
-    "C_Cpp.updateChannel": "Insiders",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.iconTheme": "vscode-icons",
-    "files.associations": {
-        "*.loc": "makefile"
-    }
+  "remote.SSH.remotePlatform": {
+    "dev-all": "linux"
+  },
+  "editor.formatOnSave": true,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[cpp]": {
+    "editor.formatOnSave": false,
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[lua]": {
+    "editor.tabSize": 2,
+  },
+  // tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "terminal.integrated.allowChords": false,
+  // "workbench.editor.enablePreview": false,
+  "C_Cpp.updateChannel": "Insiders",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-icons",
+  "files.associations": {
+    "Makefile.*": "makefile",
+    "*.ml": "cpp",
+    "*.pp": "plaintext"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.autofetch": true,
+  "editor.maxTokenizationLineLength": 40000,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "git-graph.maxDepthOfRepoSearch": 1,
+  "editor.rulers": [
+    110
+  ],
+  "editor.wordWrapColumn": 110,
+  "update.enableWindowsBackgroundUpdates": false,
+  "eslint.alwaysShowStatus": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnType": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "files.autoSave": "afterDelay",
+  "eslint.debug": true,
+  "prettier.tabWidth": 4,
+  "eslint.format.enable": true,
 }
